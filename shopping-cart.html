@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart (HW)</title>
+    <link rel="stylesheet" href="./shopping-cart.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://www.jobpasscard.com/static/images/layout1.5/Logo.png" alt="jobpasscard" width="188px">
+        </div>
+        <div class="centernav">
+            <ul>
+                <li><a href="#"> ABOUT US</a></li>
+                <li><a href="#"> PASSCARD</a></li>
+                <li><a href="#"> PROFILE</a></li>
+            </ul>
+        </div>
+        <div class="lastnav">
+            <img src="./pic/search icon.svg" alt="search" width="24px">
+            <div class="cart">
+                <img src="./pic/cart shopping.svg" alt="cart" width="24px">     
+                <div class="no">
+                    <p>1</p>
+                </div>
+            </div>
+            <h5>LOGIN</h5>
+            <h5 style="color: rgba(163, 170, 187, 1);">|</h5>
+            <h5>SIGN UP</h5>
+        </div>
+    </nav>
+    <div class="main">
+        <h2>My Cart</h2>
+        <div class="menu">
+            <div class="content">
+                <div class="top">
+                    <img src="./pic/bin.svg" alt="bin">
+                    <div class="topbox">
+                        <div class="message">
+                        <img src="./pic/blue document.svg" alt="bluedocs">
+                        <h3>Google Docs</h3>
+                        <p>Used for business</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="detail">
+                            <p>Google Docs</p>
+                            <div class="circle">
+                                <img src="./pic/circle brand.svg" alt="circle" width="12px">
+                                <img src="./pic/circle.svg" alt="circle" width="12px">
+                                <img src="./pic/circle.svg" alt="circle" width="12px">
+                                <select name="level" id="level" >
+                                    <option value="" disabled selected>Select</option>
+                                    <option value selected ="level1">LV 1-3</option>
+                                    <option value="level2">LV 2-3</option>
+                                    <option value="level3">LV 3-3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p style="font-size: 14px;">THB 150</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <img src="./pic/bin.svg" alt="bin">
+                    <div class="bottombox">
+                        <div class="message">
+                        <img src="./pic/orange doc.svg" alt="orangedocs">
+                        <h3>Google Slides</h3>
+                        <p>Used for business</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="detail">
+                            <p>Google Slides</p>
+                            <div class="circle">
+                                <img src="./pic/circle brand.svg" alt="circle" width="12px">
+                                <img src="./pic/circle brand.svg" alt="circle" width="12px">
+                                <img src="./pic/circle brand.svg" alt="circle" width="12px">
+                                <img src="./pic/circle.svg" alt="circle" width="12px">
+                                <select name="level" id="level" >
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="level1">LV 1-4</option>
+                                    <option value="level2">LV 2-4</option>
+                                    <option value="level3" selected>LV 3-4</option>
+                                    <option value="level4">LV 4-4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p style="font-size: 14px;">THB 150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="money">
+                <div class="side">
+                    <h3>Order Info</h3>
+                    <div class="subtotal">
+                        <span style="color: rgba(128, 128, 128, 0.8);">Subtotal</span>
+                        <span>THB 300</span>
+                    </div>
+                    <div class="coupon">
+                        <img src="./pic/coupon.svg" alt="coupon">
+                        <input type="text" placeholder="Promotion code">
+                        <button>APPLY</button>
+                    </div>
+                    <hr>
+                    <div class="total">
+                    <span class="total">Total payment</span><span class="price">THB 300</span>
+                    </div>
+                    <button>LOG IN TO CHECKOUT</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

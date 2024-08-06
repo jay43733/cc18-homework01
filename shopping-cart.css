@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html{
+    font-family: Kanit;
+}
+body{
+    width: 100wh;
+    height: 100vh;
+    background-color: #ffffff;
+}
+nav{
+    padding: 0px 28px;
+    height: 10vh;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(232, 234, 239, 1);
+}
+nav .logo{
+    flex: 1 4 20%;
+}
+.logo img{
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+nav .centernav{
+    flex: 4 4 50%;
+    align-content: center;
+}
+.centernav ul{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+}
+.centernav ul li{
+    list-style: none;
+}
+a{
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: #36454F ;
+}
+nav .lastnav{
+    display: flex;
+    flex: 4 1 30%;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.lastnav .cart{
+    position: relative;
+}
+.lastnav h5{
+    font-weight: 600;
+    font-size: 14px;
+    color: #36454F ;
+}
+.lastnav .cart .no{
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    border-radius: 100px;
+    background-color: red;
+}
+.main{
+    width: 90%;
+    margin: 32px auto;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: 49%;
+}
+.money{
+    width: 49%;
+    /* background-color: rgb(114, 250, 198); */
+}
+.top, .bottom{
+    margin: 10px 10px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.top > img{
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border: 1px solid rgba(99, 216, 184, 1);
+    border-radius: 8px;
+}
+.bottom > img{
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border: 1px solid rgba(99, 216, 184, 1);
+    border-radius: 8px;
+}
+.topbox{
+    width: 37%;
+    height: 40%;
+    border-radius: 24px;
+    background-image: linear-gradient(to right top,rgba(101, 163, 248, 1), rgba(117, 178, 249, 1),rgba(136, 192, 251, 1));
+    background-color: aquamarine;
+}
+.topbox .message{
+    padding: 32px 16px;
+    line-height: 1.5rem;
+}
+.topbox .message img{
+    box-sizing: content-box;
+    width: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+}
+.topbox .message p{
+    color: rgba(255, 255, 255, 0.819);
+    font-size: 12px;
+}
+.topbox .message h3{
+    color: white;
+}
+.bottombox{
+    width: 37%;
+    height: 40%;
+    border-radius: 24px;
+    background-image: linear-gradient(to right top,rgba(234, 137, 86, 1), rgba(236, 158, 90, 1),rgba(245, 200, 109, 1));
+}
+.bottombox .message{
+    padding: 32px 16px;
+    line-height: 1.5rem;
+}
+.bottombox .message img{
+    box-sizing: content-box;
+    width: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+}
+.bottombox .message p{
+    color: rgba(255, 255, 255, 0.817);
+    font-size: 12px;
+}
+.bottombox .message h3{
+    color: white;
+}
+.product{
+    width: 148px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.product p{
+    font-size: 20px;
+}
+.product .detail{
+    line-height: 2rem;
+}
+.circle{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.circle select {
+    border-color: rgba(99, 216, 184, 1);
+    font-weight: 300;
+    font-size: 12px;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.265);
+    border-radius: 16px;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    font-family: Kanit;
+    color:#36454F ;
+}
+.subtotal, .total span{
+    font-size: 16px;
+}
+.coupon{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.coupon img{
+    box-sizing: content-box;
+    width: 20px;
+    padding: 8px;
+}
+.coupon input{
+    width: 60%;
+    border-radius: 8px;
+    padding: 4px 8px;
+    border-color: rgba(128, 128, 128, 0.107) ;
+}
+.coupon button{
+    width: 20%;
+    border-radius: 16px;
+    border: 2px solid rgba(99, 216, 184);
+    padding: 8px auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(99, 216, 184);
+    background-color: rgba(227, 230, 232, 0);
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total .price{
+    color: rgba(99, 216, 184);
+    font-size: 24px;
+    font-weight: 500;
+}
+.side > button{
+    width: 100%;
+    background-color:rgba(99, 216, 184) ;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 800;
+    color:#36454F ;
+    box-shadow: 0px 4px 8px rgba(99, 216, 184, 0.2);
+}
+.side > hr{
+    margin: 16px 0px;
+}
+@media(max-width:925px){
+    nav .centernav{
+        flex: 4 1 50%;
+        gap: 16px;
+    }
+    nav .lastnav{
+        flex: 4 1 50%;
+        gap: 16px;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .content{
+        width: 100%;
+    }
+    .money{
+        width: 100%;
+        /* background-color: rgb(114, 250, 198); */
+    }
+    .side{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.265);
+        border-radius: 16px;
+    }
+    .lastnav span{
+        position: absolute;
+        bottom: 32px;
+        left: 100px;
+    }
+}
